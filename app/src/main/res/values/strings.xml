@@ -5,4 +5,10 @@
     <string name="Repeat">Repeed</string>
     <string name="times">times</string>
     <string name="number">Number of times</string>
+
+    <string name="Toast_Error_NoText">No text entered</string>
+    <string name="Toast_Error_WrongNumber">Incompatible number value entered</string>
+    <string name="Toast_Error_ResultError">Error occurred creating output</string>
+    <string name="Toast_Success_CopiedToClipboard">Copied to clipboard!</string>
+    <string name="Toast_Error_FailedCopyingToClipboard">Error copying to clipboard. Try copying manually.</string>
 </resources>
