@@ -11,4 +11,5 @@
     <string name="Toast_Error_ResultError">Error occurred creating output</string>
     <string name="Toast_Success_CopiedToClipboard">Copied to clipboard!</string>
     <string name="Toast_Error_FailedCopyingToClipboard">Error copying to clipboard. Try copying manually.</string>
+    <string name="Toast_Warning_NothingToCopy">Nothing to copy</string>
 </resources>
