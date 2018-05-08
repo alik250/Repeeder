@@ -1,11 +1,12 @@
 <resources>
+    <!-- Interface Strings -->
     <string name="app_name">Repeeder</string>
     <string name="enterTextHint">Text</string>
     <string name="repeatTextButton">Repeed</string>
-    <string name="Repeat">Repeed</string>
-    <string name="times">times</string>
     <string name="number">Number of times</string>
-
+    <string name="clear">Clear</string>
+    <string name="copy_to_clipboard">Copy to Clipboard</string>
+    <!-- Toasts -->
     <string name="Toast_Error_NoText">No text entered</string>
     <string name="Toast_Error_WrongNumber">Incompatible number value entered</string>
     <string name="Toast_Error_ResultError">Error occurred creating output</string>

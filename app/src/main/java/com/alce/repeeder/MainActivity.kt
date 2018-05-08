@@ -21,9 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val repeatButton = findViewById<Button>(R.id.repeatTextButton)
         val copyToClipboardButton = findViewById<Button>(R.id.copyToClipboardButton)
-
-        var previousText: CharSequence = ""
-        var previousNum: CharSequence = ""
+        val clearButton = findViewById<Button>(R.id.clearButton)
 
         repeatButton.setOnClickListener {
 
@@ -34,11 +32,6 @@ class MainActivity : AppCompatActivity() {
             else if (numberOfTimesToRepeat.text.isEmpty() || numberOfTimesToRepeat.text.toString().toInt() <= 0)
             {
                 showToast(getString(R.string.Toast_Error_WrongNumber))
-            }
-            else if ((textToBeRepeated.text == previousText) && (numberOfTimesToRepeat.text == previousNum))
-            {
-                println("Debug: Nothing happened.")
-                showToast("Nothing happened")
             }
             else
             {
@@ -55,13 +48,7 @@ class MainActivity : AppCompatActivity() {
                     showToast(getString(R.string.Toast_Error_ResultError), false)
                 }
             }
-            println(previousText)
-            println(previousNum)
-            previousText = textToBeRepeated.text
-            previousNum = numberOfTimesToRepeat.text
-
         }
-
 
         copyToClipboardButton.setOnClickListener {
 
@@ -87,6 +74,10 @@ class MainActivity : AppCompatActivity() {
                     println("resultsView:  " + resultsView.text)
                 }
             }
+        }
+
+        clearButton.setOnClickListener {
+            resultsView.text = ""
         }
     }
 

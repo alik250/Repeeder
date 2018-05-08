@@ -10,7 +10,7 @@
         android:id="@+id/textToBeRepeated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/enterTextHint"
         android:inputType="textPersonName"
@@ -27,7 +27,7 @@
         android:ems="10"
         android:hint="@string/number"
         android:inputType="number"
-        android:text="1"
+        android:text="20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
         android:id="@+id/repeatTextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="@string/repeatTextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,9 +76,20 @@
         android:layout_width="wrap_content"
         android:layout_height="47dp"
         android:layout_marginBottom="8dp"
-        android:text="Copy to Clipboard"
+        android:text="@string/copy_to_clipboard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clearButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/copyToClipboardButton" />
 
 </android.support.constraint.ConstraintLayout>
